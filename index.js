@@ -1,4 +1,4 @@
-function takeANumber(katzDeliLine, name){
+function takeANumber(katzDeliLine){
   katzDeliLine.push(name)
   return `Welcome, ${name}. You are number ${parseInt(katzDeliLine.indexOf(name))+1} in line.`
 } // all returning indexes will be +1 
