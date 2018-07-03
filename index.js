@@ -1,7 +1,10 @@
+var lineNumber = 0
+
 function takeANumber(katzDeliLine){
-  katzDeliLine.push(name)
-  return `Welcome, ${name}. You are number ${parseInt(katzDeliLine.indexOf(name))+1} in line.`
-} // all returning indexes will be +1 
+  var newNumber = ++lineNumber
+  katzDeliLine.push(newNumber)
+  return newNumber
+} 
 
 function nowServing(katzDeliLine){
   if(katzDeliLine.length < 1){
